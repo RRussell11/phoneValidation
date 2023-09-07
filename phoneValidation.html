@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta viewport charset="utf-8">
+        <title> phone Validation javascript </title>
+
+            <link rel="stylesheet" href="style.css">
+     </head>
+    <body>
+        <div> 
+            <h3></h3>Phone Validation Check </h3>
+        <form id = "form" action="#" </form>
+            <div class="inputBox">
+                <input type="text" name="" id="phone"
+                placeholder=" Enter phone number" "onkeydown="
+                validation()">
+                <span id= "text"></span>
+            </div>
+    </form>
+</div>
+<script type= "text/javascript">
+ function PhoneNumberValidationCheck(PhoneNumber){
+var form=document.getElementById("form");
+var phone=document.getElementById("phone").value;
+var number=document.getElementById("number");
+var pattern=/^[2-9]\d{2}[2-9]\d{2}\d{4}$/;
+
+if(phone.match(pattern)){
+    form. classList.add("valid");
+    form. classList.remove("invalid");
+    text.innerHtml= "Your Valid Phone Number";
+    text.style.color="#00ff00";
+}
+else{
+    form. classList.remove("valid");
+    form. classList.add("invalid");
+    text.innerHtml= "Please, Enter Your Valid Phone Number";
+    text.style.color="#00ff00";
+}
+if(NAN=!"value")
+{
+    form. classList.remove("valid");
+    form. classList.remove("invalid");
+    text.innerHtml= "";
+    text.style.color="#00ff00";
+}
+}
+</script>
+    </body>
+</html>
